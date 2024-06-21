@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 40px 20px 0 20px;
+        background: hsl(180, 12%, 8%);
+    }
+
+    .container .heading {
+        width: 50%;
+        padding-bottom: 50px;
+    }
+
+    .container .heading h2 {
+        color: hsl(79, 72%, 55%);
+        font-size: 40px;
+        font-weight: bolder;
+        padding-bottom: 10px;
+        border-bottom: 3px solid hsl(79, 72%, 55%);
+    }
+
+    .container .box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    .container .box .col {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+    }
+
+    .container .box .col img {
+        width: 100%;
+        padding-bottom: 5px;
+        border-radius: 5px;
+    }
+
+    .container .btn {
+        margin: 40px 0 70px 0;
+        background: #222;
+        padding: 15px 40px;
+        border-radius: 5px;
+    }
+
+    .container .btn a {
+        color: hsl(79, 72%, 55%);
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: bolder;
+        letter-spacing: 3px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .container .box {
+            flex-direction: column;
+        }
+
+        .container .box .col {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 650px) {
+        .container .heading {
+            width: 100%;
+        }
+
+        .container .heading h2 {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Our Gallery</h2>
+
+        </div>
+        <div class="box">
+            <div class="col">
+                <img src="gallery_1.jpeg.jpg" alt="gallery">
+                <img src="gallery_2.jpeg.jpg" alt="gallery">
+                <img src="gallery_3.jpeg.jpg" alt="gallery">
+                <img src="gallery_4.jpeg.jpg" alt="gallery">
+                <img src="gallery_5.jpeg.jpg" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="gallery_6.jpeg.jpg" alt="gallery">
+                <img src="gallery_7.jpeg.jpg" alt="gallery">
+                <img src="gallery_8.jpeg.jpg" alt="gallery">
+                <img src="gallery_9.jpeg.jpg" alt="gallery">
+                <img src="gallery_10.jpeg.jpg" alt="gallery">
+            </div>
+            <div class="col">
+                <img src="gallery_11.jpeg.jpg" alt="gallery">
+                <img src="gallery_12.jpeg.jpg" alt="gallery">
+                <img src="gallery_13.jpeg.jpg" alt="gallery">
+                <img src="gallery_14.jpeg.jpg" alt="gallery">
+                <img src="gallery_15.jpeg.jpg" alt="gallery">
+            </div>
+        </div>
+        <div class="btn">
+            <a href="#">More</a>
+        </div>
+    </div>
+</body>
+
+</html>
