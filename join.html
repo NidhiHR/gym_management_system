@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>application form</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .btn {
+        padding: 2%;
+        text-align: center;
+    }
+
+    .btn button {
+        margin-right: 30px;
+        width: 10%;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <section>
+        <h1 style="color:hsl(79, 72%, 55%); padding:0.5%; text-align: center; font-size: 45px;">Registration Form</h1>
+    </section>
+    <hr>
+    <div style="padding-left: 25%; padding-right: 25%; ">
+        <form action="submit_registration.php" method="post"
+            style="border: 1px solid #000; border-radius: 2%; background-color: hsl(79, 72%, 55%);">
+            <section class="Personal details" style="padding-left:40px;">
+                <h3>Personal details:</h3><br>
+                <div class="form">
+                    Name : <input type="text" name="name" placeholder="Enter your name"
+                        style="margin-left: 20px; text-align: center;" onfocus="this.value=''"><br><br>
+                    Email : <input type="email" name="mail" placeholder="Enter your email"
+                        style="margin-left: 20px; text-align: center; " onfocus="this.value=''"><br><br>
+                    <label for="phone"> Phone number:</label>
+                    <input type="tel" name="phone" placeholder="Enter your phone number"
+                        style="margin-left: 20px;"><br><br>
+                    Date of Birth : <input type="date" name="dob"
+                        style="margin-left: 20px; text-align: center; "><br><br>
+                    City : <select name="city" style="margin-left: 20px;">
+                        <option value="0">Select your city:</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Hassan">Hassan</option>
+                        <option value="Dvavangere">Dvavangere</option>
+                    </select><br><br>
+                    State : <select name="state" style="margin-left:20px ;">
+                        <option value="0">Select your state</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select><br><br>
+                    <label for="type">Where did you learn about the club?</label><br>
+                    <input type="radio" name="method" value="Instagram">Instagram<br>
+                    <input type="radio" name="method" value="Recommendation">Recommendation<br>
+                    <input type="radio" name="method" value="Advertisement">Advertisement<br><br>
+                </div>
+            </section>
+            <section style="padding-left:40px;">
+                <h3>Emergency Contact:</h3><br>
+                Name : <input type="text" name="emergency_contact_name" placeholder="Enter emergency contact name"
+                    style="margin-left: 20px; text-align: center;" onfocus="this.value=''"><br><br>
+                Phone number : <input type="tel" name="emergency_contact_phone"
+                    placeholder="Enter emergency contact phone" style="margin-left: 20px;"><br><br>
+            </section>
+            <section style="padding-left:40px;">
+                <h3>Membership:</h3><br>
+                <label for="type of membership">Please select the type of membership you need</label><br>
+                <input type="radio" name="membership_type" value="Adult">Adult<br>
+                <input type="radio" name="membership_type" value="Student">Student<br>
+                <input type="radio" name="membership_type" value="Disability">Disability<br>
+                <input type="radio" name="membership_type" value="Couple">Couple<br>
+                <input type="radio" name="membership_type" value="Retired">Retired<br><br>
+
+                <label for="duration of Membership"> Membership Duration: </label><br>
+                <input type="radio" name="membership_duration" value="3 Months">3 Months<br>
+                <input type="radio" name="membership_duration" value="6 Months">6 Months<br>
+                <input type="radio" name="membership_duration" value="1 Year">1 Year<br><br>
+
+                <label for="plan"> Membership Plan: </label><br>
+                <input type="radio" name="membership_plan" value="Basic">Basic Plan<br>
+                <input type="radio" name="membership_plan" value="Weekly">Weekly Plan<br>
+                <input type="radio" name="membership_plan" value="Monthly">Monthly Plan<br><br>
+            </section>
+            <section class="btn">
+                <button type="submit" style="color: hsl(79, 72%, 55%);">Submit</button>
+                <button type="reset" style="color: hsl(79, 72%, 55%);">Clear</button>
+            </section>
+        </form>
+    </div>
+</body>
+
+
+</html>
