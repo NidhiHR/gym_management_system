@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Pricing page
+    </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Poppins", Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+        background-color: #000;
+    }
+
+    .pricing {
+        padding: 5%;
+        width: 100%;
+        margin-top: 0rem;
+        display: flex;
+        justify-content: space-between;
+        /* Distribute containers evenly */
+        gap: 2rem;
+        overflow-x: auto;
+        /* Allow horizontal scrolling if containers don't fit */
+    }
+
+    .pricecontainer {
+        flex: 1;
+
+        max-width: calc(33.33% - 2rem);
+        background-color: hsl(79, 72%, 55%);
+        padding: 2rem 1rem;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(5, 5, 5, 0.1);
+    }
+
+
+    .basic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+
+    .basic img {
+        margin-top: 1rem;
+        max-width: 70px;
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        white-space: nowrap;
+        color: aliceblue;
+        background-color: rgb(9, 9, 15);
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: rgb(84, 84, 107);
+    }
+
+    .price {
+        padding: 10%;
+        background-color: #000;
+        align-items: center;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1 style="text-align:center; margin-top: 1rem ; color: aliceblue;">Pricing<br><br>
+        <hr>
+    </h1>
+    <p style="text-align: center; margin-top: 2rem; color: aliceblue;"><b> Our pricing plan comes with various
+            membership tiers, each
+            tailored to
+            cater to different preferences and fitness aspirations.</b></p>
+    <div class="pricing">
+        <div class="pricecontainer">
+            <div class="basic">
+                <h2>Basic Plan</h2>
+                <img src="price-1.png" alt="price" />
+                <p style="padding: 3%; border: 2px solid #000;">
+                    Our Basic Plan is the perfect starting point for individuals
+                    looking to kickstart their fitness journey or maintain an active
+                    lifestyle.
+                </p>
+                <br>
+                <hr style="border: 1px solid #000; width:100%"><br>
+                <h3>Key Features</h3><br>
+                <ul>
+                    <li>Smart workout plan</li>
+                    <br>
+                    <li>At home workouts</li>
+                </ul>
+            </div>
+            <div class="price" style="margin-top:40% ;">
+                <b>
+                    <p style="color: hsl(79, 72%, 55%);">&#x20B9 700 perMonth</p>
+                </b>
+
+            </div>
+            <div style="padding-top: 55px;">
+                <button class="btn" onclick="window.location.href = 'join.html';">Join Now</button>
+            </div>
+        </div>
+        <div class="pricecontainer">
+            <div class="basic">
+                <h2>Weekly Plan</h2>
+                <img src="price-2.png" alt="price" />
+                <p style="padding:3%; border: 2px solid #000;">
+                    Our weekly plan is designed to provide structure and variety to
+                    your workouts, ensuring you stay motivated and on track.
+                </p>
+                <br>
+                <hr style="border: 1px solid #000; width:100%"><br>
+                <h3>Key Features</h3><br>
+                <ul>
+                    <li>PRO Gyms</li>
+                    <br>
+                    <li>Smart workout plan</li>
+                    <br>
+                    <li>At home workouts</li>
+                </ul>
+            </div>
+            <div class="price" style="margin-top: 28%;">
+                <b>
+                    <p style="color: hsl(79, 72%, 55%);">&#x20B9 900 perMonth</p>
+                </b>
+            </div>
+
+            <div style="padding-top: 55px;">
+                <button class="btn" onclick="window.location.href = 'join.html';">Join Now</button>
+            </div>
+        </div>
+        <div class="pricecontainer">
+            <div class="basic">
+                <h2>Monthly Plan</h2>
+                <img src="price-3.png" alt="price" />
+                <p style="padding:3%; border: 2px solid #000;">
+                    With this flexible membership, you'll have access to our
+                    state-of-the-art gym facilities, expert trainers, and a vibrant
+                    fitness community
+                </p>
+                <br>
+                <hr style="border: 1px solid #000; width:100%">
+                <br>
+                <h3>Key Features</h3>
+                <ul>
+                    <li>ELITE Gyms & Classes</li>
+                    <br>
+                    <li>PRO Gyms</li>
+                    <br>
+                    <li>Smart workout plan</li><br>
+                    <li>At home workouts</li><br>
+                    <li>Personal Training</li>
+                </ul>
+            </div>
+            <div class="price">
+                <b>
+                    <p style="color: hsl(79, 72%, 55%);">&#x20B9 1200 perMonth</p>
+                </b>
+            </div>
+            <div style="padding-top: 55px;">
+                <button class="btn" onclick="window.location.href = 'join.html';">Join Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
