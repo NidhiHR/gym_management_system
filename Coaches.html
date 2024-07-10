@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Profile Cards | CodingLab</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <style>
+    /* hsl(79, 72%, 55%);
+hsl(180, 12%, 8%); */
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    ::selection {
+      background: hsl(180, 12%, 8%);
+      ;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 60px;
+      color: hsl(79, 72%, 55%);
+    }
+
+    h6 {
+      font-size: 20px;
+      color: hsl(79, 72%, 55%);
+    }
+
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      place-items: center;
+      background: hsl(180, 12%, 8%);
+      padding-top: 10px;
+    }
+
+    .container {
+      max-width: 1100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 200px;
+      padding: 20px;
+
+    }
+
+    .container .box {
+      width: calc(33% - 10px);
+      background: hsl(79, 72%, 55%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 30px;
+      border-radius: 5px;
+    }
+
+    .box .quote i {
+      margin-top: 10px;
+      font-size: 45px;
+      color: hsl(79, 72%, 55%);
+    }
+
+    .container .box .image {
+      margin: 10px 0;
+      height: 150px;
+      width: 150px;
+      background: hsl(180, 12%, 8%);
+      ;
+      padding: 3px;
+      border-radius: 50%;
+    }
+
+    .box .image img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+
+    .box p {
+      text-align: justify;
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .box .name_job {
+      margin: 10px 0 3px 0;
+      color: hsl(180, 12%, 8%);
+      ;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .rating i {
+      font-size: 18px;
+      color: hsl(180, 12%, 8%);
+      ;
+      margin-bottom: 5px;
+    }
+
+    .btns {
+      margin-top: 20px;
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .btns button {
+      background: hsl(180, 12%, 8%);
+      ;
+      width: 100%;
+      padding: 9px 0px;
+      outline: none;
+      border: 2px solid hsl(180, 12%, 8%);
+      ;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 400;
+      color: hsl(180, 12%, 8%);
+      ;
+      transition: all 0.3s linear;
+    }
+
+    .btns button:first-child {
+      background: none;
+      margin-right: 5px;
+    }
+
+    .btns button:last-child {
+      color: hsl(79, 72%, 55%);
+      margin-left: 5px;
+    }
+
+    .btns button:first-child:hover {
+      background: hsl(180, 12%, 8%);
+      ;
+      color: hsl(79, 72%, 55%);
+    }
+
+    .btns button:hover {
+      color: hsl(79, 72%, 55%);
+    }
+
+    @media (max-width:1045px) {
+      .container .box {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width:710px) {
+      .container .box {
+        width: 100
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Our Trainees</h1>
+  <h6>The body achieves what the mind believes.</h6>
+  <div class="container">
+    <div class="box">
+      <div class="image">
+        <img src="trainee_1.webp.jpg">
+      </div>
+      <div class="name_job">Kris Gethin</div>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>Kris Gethin has been voted the world's No.1 Transformation expert, twice! Nobody can dispute Kris' unrivalled
+        authority to help millions of people transform their body no matter their circumstances.</p>
+      <div class="btns">
+        <button>Read More</button>
+        <button id="subscribe1">Subscribe</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="trainee_2.jpeg.jpg" alt="">
+      </div>
+      <div class="name_job">Payal Gidwari Tiwari</div>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p> Payal Gidwani Tiwari gave up her interior designer job around nine years ago, when a spiritual calling made
+        her turn to the holistic discipline of yoga. Soon, she became one of the foremost yoga experts in Mumbai.</p>
+      <div class="btns">
+        <button>Read More </button>
+        <button id="subscribe2">Subscribe</button>
+      </div>
+    </div>
+    <div class="box">
+      <div class="image">
+        <img src="trainee_3.jpeg.jpg" alt="">
+      </div>
+      <div class="name_job">Yasmin Karachiwala</div>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p> Yasmin Karachiwala, a fitness expert with 26 years of experience in the fitness industry and pioneer of
+        ‘Pilates’ physical fitness system in India.Her association get Gorgeous and other fitness programs on
+        television.</p>
+      <div class="btns">
+        <button>Read More</button>
+        <button id="subscribe">Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.getElementById("subscribe").addEventListener("click", function () {
+      window.location.href = "contact.html";
+    });
+    document.getElementById("subscribe1").addEventListener("click", function () {
+      window.location.href = "contact.html";
+    });
+    document.getElementById("subscribe2").addEventListener("click", function () {
+      window.location.href = "contact.html";
+    });
+  </script>
+</body>
+
+</html>
